@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Your SPACIO sign-in code</title>
+  </head>
+  <body style="margin:0;padding:0;background-color:#f4f0e4;">
+    <!-- Preview text shown in the inbox list -->
+    <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Your SPACIO code is {{ .Token }}. It expires in 10 minutes.</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f0e4;">
+      <tr>
+        <td align="center" style="padding:32px 16px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:480px;">
+            <!-- Wordmark -->
+            <tr>
+              <td style="padding:0 4px 20px 4px;font-family:Georgia,'Times New Roman',serif;font-size:24px;font-weight:bold;color:#1f5642;letter-spacing:0.5px;">
+                SPACIO
+              </td>
+            </tr>
+            <!-- Card -->
+            <tr>
+              <td style="background-color:#fbf9f3;border:1px solid #e5dfd0;border-radius:14px;padding:32px 28px;">
+                <h1 style="margin:0 0 12px 0;font-family:Georgia,'Times New Roman',serif;font-size:24px;line-height:1.3;font-weight:normal;color:#1c2a23;">
+                  Your sign-in code
+                </h1>
+                <p style="margin:0 0 24px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.55;color:#3a453e;">
+                  Enter this code on the SPACIO sign-in page to continue as <strong style="color:#1c2a23;">{{ .Email }}</strong>.
+                </p>
+                <!-- Code -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td align="center" style="background-color:#dde7db;border-radius:12px;padding:20px 12px;">
+                      <span style="font-family:'Courier New',Courier,monospace;font-size:34px;line-height:1;font-weight:bold;letter-spacing:10px;color:#1f5642;">{{ .Token }}</span>
+                    </td>
+                  </tr>
+                </table>
+                <p style="margin:24px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.55;color:#5c665e;">
+                  The code expires in <strong style="color:#1c2a23;">10 minutes</strong> and works once. Never share it: SPACIO will never ask you for it by email, phone or chat.
+                </p>
+                <p style="margin:16px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.55;color:#5c665e;">
+                  Didn’t try to sign in? You can ignore this email. Nobody can get into your account without this code.
+                </p>
+              </td>
+            </tr>
+            <!-- Footer -->
+            <tr>
+              <td style="padding:20px 4px 0 4px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.5;color:#5c665e;">
+                SPACIO helps students find, book and check in to campus spaces. It’s a student project, not an official SRM service.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
